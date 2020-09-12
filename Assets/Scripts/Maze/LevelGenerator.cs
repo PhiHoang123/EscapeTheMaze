@@ -69,7 +69,7 @@ public class LevelGenerator : MonoBehaviour
                     //pick a random number from 0 - array length
                     randPos = Random.Range(0, _finishLineSpawnPoints.Length);
 
-                    //institate random position of a spawnpoint on gamescene
+                    //Instantiate finishline at random position of a spawnpoint on gamescene
                     Instantiate(_finishLine, _finishLineSpawnPoints[randPos].transform.position, Quaternion.identity);
 
                     _finishLineSpawned = true;
