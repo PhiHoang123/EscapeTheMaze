@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
             //Draw a line from camera to the mouse position.
             Ray myray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            //Contains all infomations about what the ray hit  
+            //Contains all informations about what the ray hit  
             RaycastHit hitInfo;
 
             if (Physics.Raycast(myray, out hitInfo, 100, whatCanBeClickedOn))
