@@ -16,8 +16,6 @@ public class FinishLine : MonoBehaviour
 
     //check if player is winner
     public static bool playerWin;
-    //check if game is finished
-    public static bool isFinished;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -27,7 +25,7 @@ public class FinishLine : MonoBehaviour
             playerWin = true;
 
             //when player reach the finishline , the level is finished
-            isFinished = true;
+            GameManager.Instance.isFinished = true;
 
             //stop the game
             Time.timeScale = 0;
@@ -51,7 +49,7 @@ public class FinishLine : MonoBehaviour
             playerWin = false;
 
             //when AI reach the finishline , the level is finished
-            isFinished = true;
+            GameManager.Instance.isFinished = true;
 
             //stop the game
             Time.timeScale = 0;

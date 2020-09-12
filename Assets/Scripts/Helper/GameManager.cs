@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+    //check if the game is finished
+    public bool isFinished;
 
     private void OnEnable()
     {

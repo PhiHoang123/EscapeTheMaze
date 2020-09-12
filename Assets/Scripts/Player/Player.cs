@@ -54,13 +54,13 @@ public class Player : MonoBehaviour
     //when player reach the finish line, press space to next level
     void ToNextLevel()
     {
-        if(FinishLine.isFinished == true)
+        if(GameManager.Instance.isFinished == true)
         {
             if (_inputController.nextLevel)
             {
                 if (toNextLevel != null)
                     toNextLevel();
-                FinishLine.isFinished = false;
+                GameManager.Instance.isFinished = false;
             }
         }
 
